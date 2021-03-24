@@ -1,0 +1,36 @@
+current time - 16:47:45
+system startap time - 5:03,
+user in system - 1 user,
+system load averages for the past 1, 5, and 15 minutes - load average: 0,03, 0,08, 0,08
+current user - dima
+recent logins:
+dima     :0           :0               Mon Mar 22 17:14 - crash  (02:30)
+reboot   system boot  4.15.0-139-gener Mon Mar 22 17:13   still running
+dima     :0           :0               Mon Mar 22 16:20 - 17:13  (00:52)
+reboot   system boot  4.15.0-20-generi Mon Mar 22 16:19 - 17:13  (00:53)
+dima     :0           :0               Mon Mar 22 16:17 - crash  (00:01)
+reboot   system boot  4.15.0-20-generi Mon Mar 22 16:16 - 17:13  (00:57)
+dima     :0           :0               Mon Mar 22 16:09 - 16:15  (00:06)
+reboot   system boot  4.15.0-20-generi Mon Mar 22 16:09 - 16:15  (00:06)
+
+wtmp begins Mon Mar 22 16:09:15 2021
+
+TOP-10 processes by CPU usage:
+  PID  PPID CMD                         %MEM %CPU
+ 2960     1 /usr/lib/firefox/firefox -n  8.9  4.1
+ 3100  2960 /usr/lib/firefox/firefox -c  7.3  1.9
+ 1619  1453 /usr/bin/gnome-shell        11.2  0.8
+ 3280  1400 /usr/lib/gnome-terminal/gno  1.1  0.5
+ 1420  1418 /usr/lib/xorg/Xorg vt1 -dis  3.6  0.2
+ 3027  2960 /usr/lib/firefox/firefox -c  4.4  0.2
+ 1573  1572 /usr/bin/VBoxClient --draga  0.0  0.1
+ 3125  2960 /usr/lib/firefox/firefox -c  3.4  0.1
+    1     0 /sbin/init splash            0.2  0.0
+open ports:
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      295/systemd-resolve 
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      2289/cupsd          
+tcp6       0      0 ::1:631                 :::*                    LISTEN      2289/cupsd          
+usege memory -       1149980 K used memory
+usage disk:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        18G  6,7G   11G  40% /

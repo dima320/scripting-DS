@@ -1,0 +1,48 @@
+system kernel - Linux
+network node hostname - dima-VirtualBox
+kernel release - 4.15.0-139-generic
+kernel version - #143-Ubuntu SMP Tue Mar 16 01:30:17 UTC 2021
+hardware name your machine - x86_64
+processor type is - x86_64
+operating system - GNU/Linux
+default gateway IP address run:
+default via 10.0.2.2 dev enp0s3 proto dhcp metric 100 
+10.0.2.0/24 dev enp0s3 proto kernel scope link src 10.0.2.15 metric 100 
+169.254.0.0/16 dev enp0s3 scope link metric 1000 
+
+information about interfaces and connection:
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::b2fe:353:5094:6864  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:28:1c:50  txqueuelen 1000  (Ethernet)
+        RX packets 29177  bytes 29829113 (29.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10766  bytes 1856484 (1.8 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 766  bytes 81348 (81.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 766  bytes 81348 (81.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+firewall status Status: inactive
+version of firewall - ufw 0.36
+Copyright 2008-2015 Canonical Ltd.
+have access to the server -  nameserver 127.0.0.53
+some info about kernel:
+abi.vsyscall32 = 1
+debug.exception-trace = 1
+debug.kprobes-optimization = 1
+dev.cdrom.autoclose = 1
+dev.cdrom.autoeject = 0
+dev.cdrom.check_media = 0
+dev.cdrom.debug = 0
+dev.cdrom.info = CD-ROM information, Id: cdrom.c 3.20 2003/12/17
+
+modprobe.conf contains a lot of information I will just output the version:
+kmod version 24
+-XZ -ZLIB -EXPERIMENTAL

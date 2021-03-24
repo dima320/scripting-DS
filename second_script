@@ -1,0 +1,32 @@
+#!/bin/bash
+echo 'Information about your system is in the file - second_log'
+
+kernel=$(uname -s)
+nodename=$(uname -n)
+release=$(uname -r)
+version=$(uname -v)
+machine=$(uname -m)
+proc=$(uname -p)
+operation=$(uname -o)
+net=$(ifconfig)
+ip1=$(ip r)
+fire_status=$(sudo ufw status)
+brand=$(ufw version)
+resolv=$(head -n 17 /etc/resolv.conf | tail -n 1)
+sysctl=$(sudo sysctl -a | head -8)
+modprobe=$(modprobe -V)
+
+echo "system kernel - $kernel" > second_log
+echo "network node hostname - $nodename" >> second_log
+echo "kernel release - $release" >> second_log
+echo "kernel version - $version" >> second_log
+echo "hardware name your machine - $machine" >> second_log
+echo "processor type is - $proc" >> second_log
+echo "operating system - $operation" >> second_log
+echo -e "default gateway IP address run:\n$ip1\n" >> second_log 
+echo -e "information about interfaces and connection:\n$net\n" >> second_log
+echo "firewall status $fire_status" >> second_log
+echo "version of firewall - $brand" >> second_log
+echo "have access to the server -  $resolv" >> second_log
+echo -e "some info about kernel:\n$sysctl\n" >> second_log
+echo -e "modprobe.conf contains a lot of information I will just output the version:\n$modprobe" >> second_log

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+time=$(uptime | awk '{print $1;}')
+up_time=$(uptime | awk '{print $3;}')
+amount_users=$(uptime | awk '{print $4,$5;}')
+load=$(uptime | awk '{print $6,$7,$8,$9,$10;}')
+who=$(whoami)
+recent=$(last | tail -10)
+top=$(ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head -10)
+open=$(sudo netstat -tulpn | grep LISTEN)
+usage=$(vmstat -s |grep "used memory")
+disk=$(df -h -t ext4)
+
+echo "current time - $time" > third_log
+echo "system startap time - $up_time" >> third_log
+echo "user in system - $amount_users" >> third_log
+echo "system load averages for the past 1, 5, and 15 minutes - $load" >> third_log
+echo "current user - $who" >> third_log
+echo -e "recent logins:\n$recent\n" >> third_log
+echo -e "TOP-10 processes by CPU usage:\n$top" >> third_log
+echo -e "open ports:\n$open" >> third_log
+echo "usege memory - $usage" >> third_log
+echo -e "usage disk:\n$disk" >> third_log
